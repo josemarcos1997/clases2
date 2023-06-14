@@ -1,6 +1,10 @@
 public class repaso155 {
     public static void main(String [] args){
         int op;
+        boolean flag;
+        do{
+        flag = false;
+
         System.out.println("ingrese una opcion");
         System.out.println("1: opcion 1");
         System.out.println("2: opcion 2");
@@ -23,12 +27,12 @@ public class repaso155 {
                 System.out.println("el usuario ingreso la opcion 4");
                 break;    
             default:
-                System.out.println("el usuario no sabe leer");
+                System.out.println("el usuario no sabe leer, opcion incorrecta, ingrese nuevamente");
+                flag= true;
+                
 
-
-
-        }
-
+                }
+            }while(flag);    
         
     }
 }
